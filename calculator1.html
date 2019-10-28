@@ -1,0 +1,37 @@
+<html>
+	<body>
+		<input type="text" id="val1">
+		<input type="text" id="val2"><br><br>
+		<button onclick="abc()">+</button>
+		<button onclick="pqr()">-</button>
+		<button onclick="xyz()">*</button>
+		<button onclick="uvw()">/</button>
+		<h1>result:<div id="res"></div></h1>
+	<script>
+		function abc(){
+		var x=document.getElementById("val1").value;
+		var y= document.getElementById("val2").value;
+		document.getElementById("res").innerHTML=parseInt(x)+parseInt(y);
+		}
+		function pqr(){
+		var x=document.getElementById("val1").value;
+		var y= document.getElementById("val2").value;
+		document.getElementById("res").innerHTML=parseInt(x)-parseInt(y);
+		}
+		function xyz(){
+		var x=document.getElementById("val1").value;
+		var y= document.getElementById("val2").value;
+		document.getElementById("res").innerHTML=x*y;
+		}
+		function uvw(){
+		var x=document.getElementById("val1").value;
+		var y= document.getElementById("val2").value;
+		document.getElementById("res").innerHTML=x/y;
+		}
+	</script>
+	
+	
+	</body>
+
+
+</html>

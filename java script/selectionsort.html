@@ -1,0 +1,19 @@
+<html>
+	<script>
+		var temp;
+		var ar=[12,45,21,78,56];
+		for(var i=0;i<=ar.length-2;i++){
+			for(var j=i+1;j<=ar.length-1;j++){
+				if(ar[i]>ar[j]){
+				temp=ar[i];
+				ar[i]=ar[j];
+				ar[j]=temp;
+		
+				}
+			}
+		}
+		console.log(ar);
+		
+	</script>
+
+</html>

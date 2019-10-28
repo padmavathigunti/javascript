@@ -1,0 +1,41 @@
+<html>
+	<style>
+	p{
+		display:none;
+	}
+	</style>
+	<body>
+	<h1 id="d1" onclick="expand(event)">chapter 1</h1>
+	<p>
+		our tuip sesf awst hgvc nmbv xplj wasdtgk
+	 	our tuip sesf awst hgvc nmbv xplj wasdtgk
+		our tuip sesf awst hgvc nmbv xplj wasdtgk
+		our tuip sesf awst hgvc nmbv xplj wasdtgk
+	</p>
+	<h1 id="d2" onclick="expand(event)">chapter 2</h1>
+	<p>	our tuip sesf awst hgvc nmbv xplj wasdtgk
+	 	our tuip sesf awst hgvc nmbv xplj wasdtgk
+		our tuip sesf awst hgvc nmbv xplj wasdtgk
+		our tuip sesf awst hgvc nmbv xplj wasdtgk
+	</p>
+	<h1 id="d3">chapter 3</h1>
+	<p>	our tuip sesf awst hgvc nmbv xplj wasdtgk
+	 	our tuip sesf awst hgvc nmbv xplj wasdtgk
+		our tuip sesf awst hgvc nmbv xplj wasdtgk
+		our tuip sesf awst hgvc nmbv xplj wasdtgk
+	</p>
+	
+		<script>
+			var n=document.getElementById("d3");
+			n.addEventListener("click",expand);
+			function expand(e){
+			document.querySelectorAll("p").forEach(function(a){
+			a.style.display="";
+			});
+			e.target.nextElementSibling.style.display="block";
+			}
+			console.dir(e);
+	
+		</script>
+	</body>
+</html>

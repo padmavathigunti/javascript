@@ -1,0 +1,21 @@
+<html>
+	<script>
+	var a=new Array(),max=0,min=0;
+	var n=parseInt(prompt("enter the range"));
+	for(i=0;i<n;i++)
+	a[i]=parseInt(prompt("enter the values"));
+	for(i=0;i<n;i++)
+	document.write(a[i],"<br>");
+	min=a[0];
+	for(i=0;i<n;i++)
+	{
+	if(max<a[i])
+	max=a[i];
+	else if(min>a[i])
+	min=a[i];
+	}
+	document.write("the max value is",max);
+	document.write("the min value is",min);
+	</script>
+
+</html>

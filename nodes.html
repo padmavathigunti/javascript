@@ -1,0 +1,32 @@
+<html>
+	<body>
+		<h1 id="d1">hello event</h1>
+		<p>my para</p>
+		<p>our para</p>
+		<p>their para</p>
+		<p>other para</p>
+		<p>your para</p>
+	</body>
+	<script>
+	var x=document.getElementById("d1");
+	console.dir(x);
+	console.dir(x instanceof Node);
+	
+	var y=document.getElementsByTagName("p");
+	y[1].style.color="red";
+	y[3].style.backgroundColor="lightgreen";
+	console.dir(y);
+	
+	
+	var z=document.querySelectorAll("p");
+	for(var i=0;i<=y.length-1;i++){
+
+	y[i].style.color="white";
+	};
+	console.dir(z);
+	z.forEach(function(a){
+	a.style.backgroundColor="blue";
+	});
+	</script>
+
+</html>

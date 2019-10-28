@@ -1,0 +1,46 @@
+<html>
+	<head>
+		<style>
+		#d1{
+			border:2px solid;
+			width:300px;
+			height:300px;
+		}
+		</style>
+	</head>
+	<body>
+	<div onmousemove="abc(event)" id="d1">
+	
+	</div>
+	<h1 id="d2"></h1>
+	<button onclick="showStudents()">show Students</button>
+	<ul id="s1">
+	
+	</ul>
+	<script>
+		var students= ['paddu','anusha','manisha','nandu','ravali','ayesha']
+		function showStudents(){
+			for(var i=0;i<=students.length-1;i++){
+				var myli=document.createElement("li");
+				var litext=document.createTextNode(students[i]);
+				myli.appendChild(litext);
+				var myul=document.getElementById("s1");
+				myul.appendChild(myli);
+			}
+		}
+		function abc(e){
+			var x=document.createElement("div");
+			x.style.width="10px";
+			x.style.height="5px";
+			x.style.backgroundColor="red";
+			x.style.position="absolute";
+			x.style.top=e.clientY;
+			x.style.left=e.clientX;
+			document.body.appendChild(x);
+		}
+	
+	</script>
+	
+	</body>
+
+</html>

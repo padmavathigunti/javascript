@@ -1,0 +1,21 @@
+<html>
+	<body>
+	<script>
+		console.dir(Document);
+		
+		console.dir(document);
+		function Employee(){
+			
+		
+		 }
+		Employee.prototype.x=100;
+		function DLEmployee(){
+			this.__proto__=Employee.prototype
+		}	
+		
+		var dle1=new DLEmployee();
+		console.dir(dle1)
+	</script>
+	</body>
+
+</html>

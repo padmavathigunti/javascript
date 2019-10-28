@@ -1,0 +1,111 @@
+<html>
+	<script>
+		var emp =[{
+						"firstname": "praveen",
+						"lastname": "gubbala",
+						"age": 36,
+						"gender": "male",
+						"city": "hyd"
+						}, 
+						{
+						"firstname": "srikanth",
+						"lastname": "gubbala",
+						"age": 32,
+						"gender": "male",
+						"city": "bengaluru"
+						},
+						{
+						"firstname": "pradeep",
+						"lastname": "reddy",
+						"age": 21,
+						"gender": "male",
+						"city": "hyd"
+						}, 
+						{
+						"firstname": "mounika",
+						"lastname": "mudiraj",
+						"age": 20,
+						"gender": "female",
+						"city": "nalgonda"
+						}, 
+						{
+						"firstname": "nikhil",
+						"lastname": "m",
+						"age": 22,
+						"gender": "male",
+						"city": "guntur"
+						}, 
+						{
+						"firstname": "riya",
+						"lastname": "bhadouria",
+						"age": 14,
+						"gender": "female",
+						"city": "indore"
+						}
+						]
+					
+						/*for(var i=0;i<=emp.length-1;i++){
+						for(var k in emp[i]){
+						console.log(emp[i][k]);
+						
+						}
+						}*/
+					
+					
+						/*for(var i=0;i<=emp.length-1;i++){
+						for(var k in emp[i]){
+						
+						console.log(emp[i]["firstname"]);
+						
+						}
+						}*/
+					
+						/*for(var i=0;i<=emp.length-1;i++){
+						if(emp[i]["gender"]==["female"]){
+						console.log(emp[i]["firstname"]);
+						}
+						}*/
+						
+						/*for(var i=0;i<=emp.length-1;i++){
+						if(emp[i]["city"]==["hyd"]){
+						console.log(emp[i]["firstname"]);
+						}
+						}*/
+						
+						/*for(var i=0;i<=emp.length-1;i++){
+						if(emp[i]["age"]==["36"]){
+						console.log(emp[i]["firstname"]);
+						}
+						}*/
+						
+						/*for(var i=0;i<=emp.length-1;i++){
+						if(emp[i]["city"]==["nalgonda"]){
+						console.log(emp[i]["firstname"]);
+						}
+						}*/
+						
+						var min=emp[0]["age"];
+						var max=emp[0]["age"];
+						for (i=0;i<emp.length-1;i++)
+						{
+						for(var k in emp[i])
+						{
+						if(max<emp[i]["age"])
+						{
+						max=emp[i]["age"];
+						}
+						else if(min>emp[i]["age"])
+						{
+						min=emp[i]["age"];
+						}
+						
+						}
+						}
+						console.log(max);
+						console.log(min);
+
+	
+	</script>
+
+
+</html>

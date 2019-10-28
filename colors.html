@@ -1,0 +1,26 @@
+<html>
+	<body>
+		<button onclick="abc()">make it red</button>
+		<button onclick="pqr()">make it green</button>
+		<button onclick="xyz()">make it blue</button>
+		<button onclick="uvw(event)">make it orange</button>
+
+		<script>
+			function abc(){
+			document.bgColor="red";
+			}
+			function pqr(){
+			document.bgColor="green";
+			}
+			function xyz(){
+			document.bgColor="blue";
+			}
+			function uvw(g){
+			document.bgColor="orange";
+			g.target.style.backgroundColor="yellow"
+			}
+		</script>
+	
+	</body>
+
+</html>

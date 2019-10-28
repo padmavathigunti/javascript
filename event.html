@@ -1,0 +1,25 @@
+<html>
+	<head>
+		<style>
+		#d1{
+			border:2px solid;
+			width:300px;
+			height:300px;
+		}
+		</style>
+	</head>
+	<body>
+	<div onmousemove="abc(event)" id="d1">
+	
+	</div>
+	<h1 id="d2"></h1>
+	<script>
+		function abc(e){
+			document.getElementById("d2").innerHTML=(e.clientX+","+e.clientY)
+		}
+	
+	</script>
+	
+	</body>
+
+</html>
